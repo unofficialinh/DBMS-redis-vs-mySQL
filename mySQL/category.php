@@ -33,128 +33,126 @@
         <div class="col-sm-7 col-sm-offset-2">
             <select class="form-control" id="sel1">
                 <optgroup label="A">
-                <option>	Academic	</option>
-                <option>	Adult	</option>
-                <option>	Adult	</option>
-                <option>	Anthologies	</option>
-                <option>	Anthologies	</option>
-                <option>	Asian Art & Collectibles	</option>
-                <option>	Asian Food & Cooking	</option>
-                <option>	Asian History & Culture	</option>
-                <option>	Asian Languages	</option>
-                <option>	Asian Literature	</option>
-                <option>	Autobiography	</option>
+                    <option value="Academic">Academic</option>
+                    <option value="Adult">Adult</option>
+                    <option value="Anthologies">Anthologies</option>
+                    <option value="Anthologies">Anthologies</option>
+                    <option value="Asian Art & Collectibles">Asian Art & Collectibles</option>
+                    <option value="Asian Food & Cooking">Asian Food & Cooking</option>
+                    <option value="Asian History & Culture">Asian History & Culture</option>
+                    <option value="Asian Languages">Asian Languages</option>
+                    <option value="Asian Literature">Asian Literature</option>
+                    <option value="Autobiography">Autobiography</option>
                 <optgroup label="B">
-                <option>	Baby Books	</option>
-                <option>	Baseball	</option>
-                <option>	Body & Sprit	</option>
-                <option>	Buddhism	</option>
-                <option>	Business Books	</option>
+                    <option value="Baby Books">Baby Books</option>
+                    <option value="Baseball">Baseball</option>
+                    <option value="Body & Sprit">Body & Sprit</option>
+                    <option value="Buddhism">Buddhism</option>
+                    <option value="Business Books">Business Books</option>
                 <optgroup label="C">
-                <option>	Children	</option>
-                <option>	Children's Literature	</option>
-                <option>	Christian	</option>
-                <option>	Coffee table book	</option>
-                <option>	Comics	</option>
-                <option>	Computers	</option>
-                <option>	Contemporary Romance	</option>
-                <option>	Cookbooks	</option>
-                <option>	Crafts & Origami	</option>
-                <option>	Creative	</option>
-                <optgroup label="D">
+                    <option value="Children">Children</option>
+                    <option value="Children's Literature">Children's Literature</option>
+                    <option value="Christian">Christian</option>
+                    <option value="Coffee table book">Coffee table book</option>
+                    <option value="Comics">Comics</option>
+                    <option value="Computers">Computers</option>
+                    <option value="Contemporary Romance">Contemporary Romance</option>
+                    <option value="Cookbooks">Cookbooks</option>
+                    <option value="Crafts & Origami">Crafts & Origami</option>
+                    <option value="Creative">Creative</option>
                 <optgroup label="E">
-                <option>	Education	</option>
-                <option>	Esotericism	</option>
+                    <option value="Education">Education</option>
+                    <option value="Esotericism">Esotericism</option>
                 <optgroup label="F">
-                <option>	Faith	</option>
-                <option>	Fantasy	</option>
-                <option>	Fantasy	</option>
-                <option>	Fiction	</option>
-                <option>	Folklore	</option>
+                    <option value="Faith">Faith</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Folklore">Folklore</option>
                 <optgroup label="G">
-                <option>	Games & Graphic Novels	</option>
-                <option>	Gardening & Flower Arranging	</option>
-                <option>	Genre Fiction	</option>
-                <option>	GLBT	</option>
+                    <option value="Games & Graphic Novels">Games & Graphic Novels</option>
+                    <option value="Gardening & Flower Arranging">Gardening & Flower Arranging</option>
+                    <option value="Genre Fiction">Genre Fiction</option>
+                    <option value="GLBT">GLBT</option>
                 <optgroup label="H">
-                <option>	Health & Yoga	</option>
-                <option>	Higher Education	</option>
-                <option>	History	</option>
-                <option>	Horror fiction	</option>
-                <option>	Humanities	</option>
-                <option>	Humor	</option>
-                <option>	Humour	</option>
+                    <option value="Health">Health</option>
+                    <option value="Health & Fitness">Health & Fitness</option>
+                    <option value="Health & Yoga">Health & Yoga</option>
+                    <option value="Higher Education">Higher Education</option>
+                    <option value="History">History</option>
+                    <option value="Horror fiction">Horror fiction</option>
+                    <option value="Humanities">Humanities</option>
+                    <option value="Humor">Humor</option>
+                    <option value="Humour">Humour</option>
                 <optgroup label="I">
-                <option>	Interior Design & Architecture	</option>
+                    <option value="Interior Design & Architecture">Interior Design & Architecture</option>
                 <optgroup label="J">
-                <option>	Journal	</option>
+                    <option value="Journal">Journal</option>
                 <optgroup label="K">
-                <option>	Kids	</option>
+                    <option value="Kids">Kids</option>
                 <optgroup label="L">
-                <option>	Learning	</option>
-                <option>	Literary Non fiction	</option>
+                    <option value="Learning">Learning</option>
+                    <option value="Literary Non fiction">Literary Non fiction</option>
                 <optgroup label="M">
-                <option>	Maps	</option>
-                <option>	Martial Arts	</option>
-                <option>	Math	</option>
-                <option>	Medicines	</option>
-                <option>	Mediumship	</option>
-                <option>	Memoir	</option>
-                <option>	Middle Grade Books	</option>
-                <option>	Military	</option>
-                <option>	Military History	</option>
-                <option>	Mind	</option>
-                <option>	Mindfulness	</option>
-                <option>	Music	</option>
-                <option>	Mystery	</option>
+                    <option value="Maps">Maps</option>
+                    <option value="Martial Arts">Martial Arts</option>
+                    <option value="Math">Math</option>
+                    <option value="Medicines">Medicines</option>
+                    <option value="Mediumship">Mediumship</option>
+                    <option value="Memoir">Memoir</option>
+                    <option value="Middle Grade Books">Middle Grade Books</option>
+                    <option value="Military">Military</option>
+                    <option value="Military History">Military History</option>
+                    <option value="Mind">Mind</option>
+                    <option value="Mindfulness">Mindfulness</option>
+                    <option value="Music">Music</option>
+                    <option value="Mystery">Mystery</option>
                 <optgroup label="N">
-                <option>	Natural History	</option>
-                <option>	Nautical & Sport	</option>
-                <option>	New Age	</option>
-                <option>	Non fiction	</option>
-                <option>	Novels	</option>
+                    <option value="Natural History">Natural History</option>
+                    <option value="Nautical & Sport">Nautical & Sport</option>
+                    <option value="New Age">New Age</option>
+                    <option value="Non fiction">Non fiction</option>
+                    <option value="Novels">Novels</option>
                 <optgroup label="O">
-                <option>	Occult	</option>
+                    <option value="Occult">Occult</option>
                 <optgroup label="P">
-                <option>	Paganism	</option>
-                <option>	Paranormal	</option>
-                <option>	Parapsychology	</option>
-                <option>	Parenting	</option>
-                <option>	Photography	</option>
-                <option>	Poetry	</option>
-                <option>	Professional Development	</option>
-                <option>	Psychology	</option>
+                    <option value="Paganism">Paganism</option>
+                    <option value="Paranormal">Paranormal</option>
+                    <option value="Parapsychology">Parapsychology</option>
+                    <option value="Parenting">Parenting</option>
+                    <option value="Photography">Photography</option>
+                    <option value="Poetry">Poetry</option>
+                    <option value="Professional Development">Professional Development</option>
+                    <option value="Psychology">Psychology</option>
                 <optgroup label="Q">
                 <optgroup label="R">
-                <option>	Regional	</option>
-                <option>	Regional Art History	</option>
-                <option>	Romance	</option>
+                    <option value="Regional">Regional</option>
+                    <option value="Regional Art History">Regional Art History</option>
+                    <option value="Romance">Romance</option>
                 <optgroup label="S">
-                <option>	Science	</option>
-                <option>	Science & Natire	</option>
-                <option>	Science Fiction	</option>
-                <option>	Sci-Fi	</option>
-                <option>	Self-help	</option>
-                <option>	Self-Help & Eastern Religion	</option>
-                <option>	Short Stories	</option>
-                <option>	Sport	</option>
+                    <option value="Science">Science</option>
+                    <option value="Science & Natire">Science & Natire</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Self-help">Self-help</option>
+                    <option value="Self-Help & Eastern Religion">Self-Help & Eastern Religion</option>
+                    <option value="Short Stories">Short Stories</option>
+                    <option value="Sport">Sport</option>
                 <optgroup label="T">
-                <option>	Technology	</option>
-                <option>	Teen	</option>
-                <option>	Thriller	</option>
-                <option>	Travel	</option>
-                <option>	Travel Guides	</option>
-                <option>	True Crime	</option>
-                <option>	True Life Stories	</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Teen">Teen</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Travel Guides">Travel Guides</option>
+                    <option value="True Crime">True Crime</option>
+                    <option value="True Life Stories">True Life Stories</option>
                 <optgroup label="U">
                 <optgroup label="V">
                 <optgroup label="W">
-                <option>	Weird Fiction	</option>
-                <option>	Western	</option>
+                    <option value="Weird Fiction">Weird Fiction</option>
+                    <option value="Western">Western</option>
                 <optgroup label="X">
                 <optgroup label="Y">
                 <optgroup label="Z">
-
             </select>
         </div>
         <div class="col-sm-offset-9">

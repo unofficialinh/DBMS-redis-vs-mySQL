@@ -46,11 +46,18 @@
         require_once('dbconfig.php');
         $book = $_POST['book'];
         $time = microtime(true);
-        $query = mysqli_query($conn, "SELECT * FROM book WHERE name LIKE '%".$book."%'");
+        $query = mysqli_query($conn,
+            "SELECT books.name, a.name AS author, p.name AS publisher, c.name AS category FROM 
+	                (SELECT * FROM book WHERE name LIKE '%".$book."%') AS books 
+                    JOIN author a ON books.author_id = a.id
+                    JOIN publisher p ON books.publisher_id = p.id
+                    JOIN category c ON books.category_id = c.id");
         $time = microtime(true)-$time;
 
         echo '<br><div class="container">';
-        echo '<div style="text-align: center"><b><i>'.mysqli_num_rows($query).' result(s) in '.$time.' microsecond.</i></b></div>';
+        echo '<div style="text-align: center">
+                <i>'.mysqli_num_rows($query).' result(s) in '.$time.' second for </i><b>'.$book.'</b>
+                </div>';
 
         if (mysqli_num_rows($query) > 0){
             echo '<br><br><table class="table table-bordered">
@@ -68,9 +75,9 @@
                 echo '
                     <tr>
                       <th scope="row">'.$row['name'].'</th>
-                      <td>'.$row['author_id'].'</td>
-                      <td>'.$row['publisher_id'].'</td>
-                      <td>'.$row['category_id'].'</td>
+                      <td>'.$row['author'].'</td>
+                      <td>'.$row['publisher'].'</td>
+                      <td>'.$row['category'].'</td>
                     </tr>';
             }
             echo '</tbody></table>';

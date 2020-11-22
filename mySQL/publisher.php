@@ -33,128 +33,128 @@
         <div class="col-sm-7 col-sm-offset-2">
             <select class="form-control" id="sel1">
                 <optgroup label="A">
-                <option>	Alchemy Press Book of Horrors	</option>
-                <option>	Alfresco Press	</option>
-                <option>	Anchor Book Press	</option>
-                <option>	Anthem Press	</option>
-                <option>	Arbordale Publishing	</option>
-                <option>	Arcade Publishing	</option>
-                <option>	Arcadia Publishing	</option>
-                <option>	Arkham House	</option>
-                <option>	Armida Publications	</option>
-                <option>	August House Publishers	</option>
-                <option>	Autumn House Press	</option>
+                    <option value="Alchemy Press Book of Horrors">Alchemy Press Book of Horrors</option>
+                    <option value="Alfresco Press">Alfresco Press</option>
+                    <option value="Anchor Book Press">Anchor Book Press</option>
+                    <option value="Anthem Press">Anthem Press</option>
+                    <option value="Arbordale Publishing">Arbordale Publishing</option>
+                    <option value="Arcade Publishing">Arcade Publishing</option>
+                    <option value="Arcadia Publishing">Arcadia Publishing</option>
+                    <option value="Arkham House">Arkham House</option>
+                    <option value="Armida Publications">Armida Publications</option>
+                    <option value="August House Publishers">August House Publishers</option>
+                    <option value="Autumn House Press">Autumn House Press</option>
                 <optgroup label="B">
-                <option>	B&W Publishing	</option>
-                <option>	Balboa Press	</option>
-                <option>	Beacon Publishing	</option>
-                <option>	Biblio Publishing	</option>
-                <option>	Bloomsbury	</option>
-                <option>	Blossom Spring Publishing	</option>
-                <option>	blue manatee press	</option>
-                <option>	Blue Swan Publishing	</option>
-                <option>	BookPress Publishing	</option>
-                <option>	Brick Cave Media	</option>
+                    <option value="B&W Publishing">B&W Publishing</option>
+                    <option value="Balboa Press">Balboa Press</option>
+                    <option value="Beacon Publishing">Beacon Publishing</option>
+                    <option value="Biblio Publishing">Biblio Publishing</option>
+                    <option value="Bloomsbury">Bloomsbury</option>
+                    <option value="Blossom Spring Publishing">Blossom Spring Publishing</option>
+                    <option value="Blue Manatee Press">blue manatee press</option>
+                    <option value="Blue Swan Publishing">Blue Swan Publishing</option>
+                    <option value="BookPress Publishing">BookPress Publishing</option>
+                    <option value="Brick Cave Media">Brick Cave Media</option>
                 <optgroup label="C">
-                <option>	Capstone Publishers	</option>
-                <option>	Chelsea Green Publishing	</option>
-                <option>	City Lights Press	</option>
-                <option>	City Lights Publishers	</option>
-                <option>	CKN Christian Publishing	</option>
-                <option>	Coffeetown Press	</option>
-                <option>	Conundrum Press	</option>
-                <option>	Coventry House Publishing	</option>
+                    <option value="Capstone Publishers">Capstone Publishers</option>
+                    <option value="Chelsea Green Publishing">Chelsea Green Publishing</option>
+                    <option value="City Lights Press">City Lights Press</option>
+                    <option value="City Lights Publishers">City Lights Publishers</option>
+                    <option value="CKN Christian Publishing">CKN Christian Publishing</option>
+                    <option value="Coffeetown Press">Coffeetown Press</option>
+                    <option value="Conundrum Press">Conundrum Press</option>
+                    <option value="Coventry House Publishing">Coventry House Publishing</option>
                 <optgroup label="D">
-                <option>	Divertir Publishing	</option>
-                <option>	Dorrance Publishing Company	</option>
-                <option>	Dover Publications	</option>
+                    <option value="Divertir Publishing">Divertir Publishing</option>
+                    <option value="Dorrance Publishing Company">Dorrance Publishing Company</option>
+                    <option value="Dover Publications">Dover Publications</option>
                 <optgroup label="E">
-                <option>	Echoic Mobile Press	</option>
-                <option>	Eerdmans	</option>
-                <option>	eLectio Publishing	</option>
+                    <option value="Echoic Mobile Press">Echoic Mobile Press</option>
+                    <option value="Eerdmans">Eerdmans</option>
+                    <option value="eLectio Publishing">eLectio Publishing</option>
                 <optgroup label="F">
-                <option>	Figroot Press	</option>
-                <option>	Flame Tree Publishing	</option>
+                    <option value="Figroot Press">Figroot Press</option>
+                    <option value="Flame Tree Publishing">Flame Tree Publishing</option>
                 <optgroup label="G">
-                <option>	Gantec Publishing Solutions	</option>
-                <option>	Graywolf Press	</option>
-                <option>	Green Frog Publishing	</option>
-                <option>	Grey Book Press	</option>
+                    <option value="Gantec Publishing Solutions">Gantec Publishing Solutions</option>
+                    <option value="Graywolf Press">Graywolf Press</option>
+                    <option value="Green Frog Publishing">Green Frog Publishing</option>
+                    <option value="Grey Book Press">Grey Book Press</option>
                 <optgroup label="H">
-                <option>	Harper Collins	</option>
-                <option>	Hidden Brook Press	</option>
-                <option>	House of Anansi Press	</option>
-                <option>	Hydra Publications	</option>
+                    <option value="Harper Collins">Harper Collins</option>
+                    <option value="Hidden Brook Press">Hidden Brook Press</option>
+                    <option value="House of Anansi Press">House of Anansi Press</option>
+                    <option value="Hydra Publications">Hydra Publications</option>
                 <optgroup label="I">
-                <option>	Ink Smith Publisher	</option>
-                <option>	Ink Smith Publishing	</option>
-                <option>	Inkwater Press	</option>
+                    <option value="Ink Smith Publisher">Ink Smith Publisher</option>
+                    <option value="Ink Smith Publishing">Ink Smith Publishing</option>
+                    <option value="Inkwater Press">Inkwater Press</option>
                 <optgroup label="J">
-                <option>	John Blake Publishing	</option>
-                <option>	John Hunt Publishing	</option>
+                    <option value="John Blake Publishing">John Blake Publishing</option>
+                    <option value="John Hunt Publishing">John Hunt Publishing</option>
                 <optgroup label="K">
-                <option>	Kensington Publishing Corp	</option>
-                <option>	Kim Dong	</option>
-                <option>	Korero Press	</option>
+                    <option value="Kensington Publishing Corp">Kensington Publishing Corp</option>
+                    <option value="Kim Dong">Kim Dong</option>
+                    <option value="Korero Press">Korero Press</option>
                 <optgroup label="L">
-                <option>	Lakewater Press	</option>
-                <option>	Lee & Low Books	</option>
-                <option>	Leo Publishing LLC	</option>
-                <option>	Little Book Press	</option>
-                <option>	Living Springs Publishers LLP	</option>
-                <option>	Lore Lush Publishing	</option>
+                    <option value="Lakewater Press">Lakewater Press</option>
+                    <option value="Lee & Low Books">Lee & Low Books</option>
+                    <option value="Leo Publishing LLC">Leo Publishing LLC</option>
+                    <option value="Little Book Press">Little Book Press</option>
+                    <option value="Living Springs Publishers LLP">Living Springs Publishers LLP</option>
+                    <option value="Lore Lush Publishing">Lore Lush Publishing</option>
                 <optgroup label="M">
-                <option>	Manning Publications	</option>
-                <option>	Mason J. Press	</option>
-                <option>	Medknow Publications	</option>
-                <option>	Moonshine Cove Publishing LLC	</option>
-                <option>	Morgan James Publishing	</option>
-                <option>	Mother Tongue Publishing	</option>
+                    <option value="Manning Publications">Manning Publications</option>
+                    <option value="Mason J. Press">Mason J. Press</option>
+                    <option value="Medknow Publications">Medknow Publications</option>
+                    <option value="Moonshine Cove Publishing LLC">Moonshine Cove Publishing LLC</option>
+                    <option value="Morgan James Publishing">Morgan James Publishing</option>
+                    <option value="Mother Tongue Publishing">Mother Tongue Publishing</option>
                 <optgroup label="N">
-                <option>	Native Ink Press	</option>
-                <option>	Neverland Publishing Company	</option>
-                <option>	North Atlantic Books	</option>
+                    <option value="Native Ink Press">Native Ink Press</option>
+                    <option value="Neverland Publishing Company">Neverland Publishing Company</option>
+                    <option value="North Atlantic Books">North Atlantic Books</option>
                 <optgroup label="O">
                 <optgroup label="P">
-                <option>	Pan Macmillan	</option>
-                <option>	Pants On Fire Press	</option>
-                <option>	Penguin Random House	</option>
-                <option>	Phoenix Publishing and Media Company	</option>
-                <option>	Phoenix Yard Books	</option>
+                    <option value="Pan Macmillan">Pan Macmillan</option>
+                    <option value="Pants On Fire Press">Pants On Fire Press</option>
+                    <option value="Penguin Random House">Penguin Random House</option>
+                    <option value="Phoenix Publishing and Media Company">Phoenix Publishing and Media Company</option>
+                    <option value="Phoenix Yard Books">Phoenix Yard Books</option>
                 <optgroup label="Q">
-                <option>	Queer Pack	</option>
+                    <option value="Queer Pack">Queer Pack</option>
                 <optgroup label="R">
-                <option>	Reed Elsevier	</option>
-                <option>	Regal House Publishing	</option>
-                <option>	Ripple Grove Press	</option>
+                    <option value="Reed Elsevier">Reed Elsevier</option>
+                    <option value="Regal House Publishing">Regal House Publishing</option>
+                    <option value="Ripple Grove Press">Ripple Grove Press</option>
                 <optgroup label="S">
-                <option>	Shambhala	</option>
-                <option>	Simon & Schuster	</option>
-                <option>	Sleepytown Press	</option>
-                <option>	Stormbird Press	</option>
+                    <option value="Shambhala">Shambhala</option>
+                    <option value="Simon & Schuster">Simon & Schuster</option>
+                    <option value="Sleepytown Press">Sleepytown Press</option>
+                    <option value="Stormbird Press">Stormbird Press</option>
                 <optgroup label="T">
-                <option>	Tachyon Publications	</option>
-                <option>	TCK Publishing	</option>
-                <option>	The Key Publishing House Inc	</option>
-                <option>	The Open Book Press	</option>
-                <option>	The Wild Rose Press	</option>
-                <option>	Tiny Fox Press	</option>
-                <option>	Tirgearr Publishing	</option>
-                <option>	Torquere Press	</option>
-                <option>	TouchPoint Press	</option>
-                <option>	Tradewind Books	</option>
-                <option>	Triplicity Publishing	</option>
-                <option>	Tuttle Publishing	</option>
+                    <option value="Tachyon Publications">Tachyon Publications</option>
+                    <option value="TCK Publishing">TCK Publishing</option>
+                    <option value="The Key Publishing House Inc">The Key Publishing House Inc</option>
+                    <option value="The Open Book Press">The Open Book Press</option>
+                    <option value="The Wild Rose Press">The Wild Rose Press</option>
+                    <option value="Tiny Fox Press">Tiny Fox Press</option>
+                    <option value="Tirgearr Publishing">Tirgearr Publishing</option>
+                    <option value="Torquere Press">Torquere Press</option>
+                    <option value="TouchPoint Press">TouchPoint Press</option>
+                    <option value="Tradewind Books">Tradewind Books</option>
+                    <option value="Triplicity Publishing">Triplicity Publishing</option>
+                    <option value="Tuttle Publishing">Tuttle Publishing</option>
                 <optgroup label="U">
                 <optgroup label="V">
-                <option>	Virgogray Press	</option>
+                    <option value="Virgogray Press">Virgogray Press</option>
                 <optgroup label="W">
-                <option>	Weasel Press	</option>
-                <option>	White Knuckle Press	</option>
-                <option>	Wiley	</option>
-                <option>	Wolfpack Publishing	</option>
-                <option>	Wordpool Press	</option>
-                <option>	Writerists House	</option>
+                    <option value="Weasel Press">Weasel Press</option>
+                    <option value="White Knuckle Press">White Knuckle Press</option>
+                    <option value="Wiley">Wiley</option>
+                    <option value="Wolfpack Publishing">Wolfpack Publishing</option>
+                    <option value="Wordpool Press">Wordpool Press</option>
+                    <option value="Writerists House">Writerists House</option>
                 <optgroup label="X">
                 <optgroup label="Y">
                 <optgroup label="Z">
