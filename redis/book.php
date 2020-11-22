@@ -26,12 +26,12 @@
 
 <div class="container">
     <form class="form-horizontal" action="book.php" method="POST" enctype="multipart/form-data"
-        style="margin-top: 200px">
+        style="margin-top: 100px">
         <div style="text-align: center">
             Enter the name you want to search
         </div><br>
         <div class="col-sm-7 col-sm-offset-2">
-            <input type="text" class="form-control" name="book" id="book" required>
+            <input type="text" class="form-control" name="book" id="book" required autocomplete="off">
         </div>
         <div class="col-sm-offset-9">
             <button type="submit" name="search" class="btn btn-primary">Search</button>
@@ -40,3 +40,39 @@
 </div>
 </body>
 </html>
+
+<?php
+    if (isset($_POST['search'])){
+        require_once('dbconfig.php');
+        $book = $_POST['book'];
+        $time = microtime(true);
+        $query = mysqli_query($conn, "SELECT * FROM book WHERE name LIKE '%".$book."%'");
+        $time = microtime(true)-$time;
+
+        echo '<br><div class="container">';
+        echo '<div style="text-align: center"><b><i>'.mysqli_num_rows($query).' result(s) in '.$time.' microsecond.</i></b></div>';
+
+        if (mysqli_num_rows($query) > 0){
+            echo '<br><br><table class="table table-bordered">
+                  <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col">Author</th>
+                          <th scope="col">Publisher</th>
+                          <th scope="col">Category</th>
+                        </tr>
+                  </thead>
+                  <tbody>';
+
+            while ($row = mysqli_fetch_assoc($query)){
+                echo '
+                    <tr>
+                      <th scope="row">'.$row['name'].'</th>
+                      <td>'.$row['author_id'].'</td>
+                      <td>'.$row['publisher_id'].'</td>
+                      <td>'.$row['category_id'].'</td>
+                    </tr>';
+            }
+            echo '</tbody></table>';
+        }
+    }

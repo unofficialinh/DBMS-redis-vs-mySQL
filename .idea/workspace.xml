@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a6b5b3-e306-4674-b04a-dbf22ab879f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mySQL/book.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mySQL/dbconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/dbconfig.php" afterDir="false" />
+    <list default="true" id="b6a6b5b3-e306-4674-b04a-dbf22ab879f3" name="Default Changelist" comment="mySQL book">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mySQL/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mySQL/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mySQL/publisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/publisher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/book.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/publisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/publisher.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +49,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/redis" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -58,12 +73,37 @@
       <updated>1605965286395</updated>
       <workItem from="1605965287523" duration="5160000" />
       <workItem from="1605970481235" duration="807000" />
-      <workItem from="1605973316392" duration="1233000" />
+      <workItem from="1605973316392" duration="1347000" />
+      <workItem from="1606033633129" duration="2368000" />
     </task>
+    <task id="LOCAL-00001" summary="mySQL book">
+      <created>1605974578743</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605974578743</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mySQL book" />
+    <option name="LAST_COMMIT_MESSAGE" value="mySQL book" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="0" key="#CLI_Interpreters" timestamp="1605966084192">
