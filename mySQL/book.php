@@ -48,7 +48,7 @@
         $time = microtime(true);
         $query = mysqli_query($conn,
             "SELECT books.name, a.name AS author, p.name AS publisher, c.name AS category FROM 
-	                (SELECT * FROM book WHERE name LIKE '%".$book."%') AS books 
+	                (SELECT * FROM book WHERE name LIKE '".$book."%') AS books 
                     JOIN author a ON books.author_id = a.id
                     JOIN publisher p ON books.publisher_id = p.id
                     JOIN category c ON books.category_id = c.id");

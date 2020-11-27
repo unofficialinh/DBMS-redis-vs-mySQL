@@ -25,13 +25,13 @@
 </nav>
 
 <div class="container">
-    <form class="form-horizontal" action="book.php" method="POST" enctype="multipart/form-data"
+    <form class="form-horizontal" action="category.php" method="POST" enctype="multipart/form-data"
           style="margin-top: 100px">
         <div style="text-align: center">
             Choose the category
         </div><br>
         <div class="col-sm-7 col-sm-offset-2">
-            <select class="form-control" id="sel1">
+            <select class="form-control" id="sel1" name="category">
                 <optgroup label="A">
                     <option value="Academic">Academic</option>
                     <option value="Adult">Adult</option>
@@ -162,3 +162,45 @@
 </div>
 </body>
 </html>
+
+<?php
+if (isset($_POST['search'])){
+    require_once ('dbconfig.php');
+    $category = $_POST['category'];
+
+    $time = microtime(true);
+    $query = mysqli_query($conn,
+        "SELECT books.name, p.name as publisher, a.name AS author FROM
+                (SELECT * FROM book WHERE category_id IN 
+                (SELECT id FROM category WHERE name = '".$category."')) AS books
+                    JOIN publisher p ON books.publisher_id = p.id
+                    JOIN author a ON books.author_id = a.id");
+    $time = microtime(true) - $time;
+
+    echo '<br><div class="container">';
+    echo '<div style="text-align: center">
+                <i>'.mysqli_num_rows($query).' result(s) in '.$time.' second for </i><b>'.$category.'</b>
+                </div>';
+
+    if (mysqli_num_rows($query) > 0){
+        echo '<br><br><table class="table table-bordered">
+                  <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col">Author</th>
+                          <th scope="col">Publisher</th>
+                        </tr>
+                  </thead>
+                  <tbody>';
+
+        while ($row = mysqli_fetch_assoc($query)){
+            echo '
+                    <tr>
+                      <th scope="row">'.$row['name'].'</th>
+                      <td>'.$row['author'].'</td>
+                      <td>'.$row['publisher'].'</td>
+                    </tr>';
+        }
+        echo '</tbody></table>';
+    }
+}

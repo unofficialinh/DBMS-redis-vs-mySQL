@@ -10,12 +10,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a6b5b3-e306-4674-b04a-dbf22ab879f3" name="Default Changelist" comment="list for author, category, publisher">
+    <list default="true" id="b6a6b5b3-e306-4674-b04a-dbf22ab879f3" name="Default Changelist" comment="back-end for book and author">
+      <change afterPath="$PROJECT_DIR$/image/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/dbconfig.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mySQL/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/redis.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/redis.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mySQL/book.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/book.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mySQL/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mySQL/publisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/publisher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/myStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/book.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/publisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/publisher.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,27 +45,32 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1kbNN0sW3GdwlWMcZXZ8o5c9KCm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/redis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/php.ini" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\UET\2020 2nd\DBMS\Project\Web\redis" />
-      <recent name="D:\UET\2020 2nd\DBMS\Project\Web\mySQL" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Stuff\xampp\htdocs\DBMS\redis" />
       <recent name="D:\UET\2020 2nd\DBMS\Project\Web\redis" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\UET\2020 2nd\DBMS\Project\Web\redis" />
+      <recent name="D:\UET\2020 2nd\DBMS\Project\Web\mySQL" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -72,7 +84,16 @@
       <workItem from="1605965287523" duration="5160000" />
       <workItem from="1605970481235" duration="807000" />
       <workItem from="1605973316392" duration="1347000" />
-      <workItem from="1606033633129" duration="6130000" />
+      <workItem from="1606033633129" duration="7533000" />
+      <workItem from="1606114050693" duration="18000" />
+      <workItem from="1606121363889" duration="597000" />
+      <workItem from="1606139816828" duration="4065000" />
+      <workItem from="1606145550762" duration="417000" />
+      <workItem from="1606192533741" duration="832000" />
+      <workItem from="1606224411297" duration="653000" />
+      <workItem from="1606277970037" duration="1191000" />
+      <workItem from="1606373076103" duration="8000" />
+      <workItem from="1606380427178" duration="128000" />
     </task>
     <task id="LOCAL-00001" summary="mySQL book">
       <created>1605974578743</created>
@@ -88,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606036278423</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="back-end for book and author">
+      <created>1606046560967</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606046560967</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,26 +135,36 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="mySQL book" />
     <MESSAGE value="list for author, category, publisher" />
-    <option name="LAST_COMMIT_MESSAGE" value="list for author, category, publisher" />
+    <MESSAGE value="back-end for book and author" />
+    <option name="LAST_COMMIT_MESSAGE" value="back-end for book and author" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="222" y="0" key="#CLI_Interpreters" timestamp="1605966084192">
+    <state x="222" y="0" key="#CLI_Interpreters" timestamp="1606144800654">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="222" y="0" key="#CLI_Interpreters/0.0.1280.680@0.0.1280.680" timestamp="1605966084192" />
+    <state x="222" y="0" key="#CLI_Interpreters/0.0.1280.680@0.0.1280.680" timestamp="1606144800654" />
     <state x="349" y="0" key="#PHP" timestamp="1605966086491">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="349" y="0" key="#PHP/0.0.1280.680@0.0.1280.680" timestamp="1605966086491" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1605970478312">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1606144798013">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1605970478312" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606144798013" />
     <state x="477" y="264" key="NewPhpFileDialog" timestamp="1605969234925">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1605969234925" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1606144801602">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606144801602" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1606047737790">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606047737790" />
   </component>
 </project>
