@@ -34,7 +34,7 @@
             <input type="text" class="form-control" name="book" id="book" required autocomplete="off">
         </div>
         <div class="col-sm-offset-9">
-            <button type="submit" name="search" class="btn btn-primary">Search</button>
+            <button id="search" type="submit" name="search" class="btn btn-primary">Search</button>
         </div>
     </form>
 </div>
@@ -42,19 +42,17 @@
 </html>
 
 <?php
+
     if (isset($_POST['search'])){
-        require_once('dbconfig.php');
         $book = $_POST['book'];
-        $time = microtime(true);
-        
-        $time = microtime(true)-$time;
+        $result = json_decode(file_get_contents("http://thinhtd.ddns.net:8080/book?name={$book}"), true);
 
         echo '<br><div class="container">';
         echo '<div style="text-align: center">
-                <i>'.mysqli_num_rows($query).' result(s) in '.$time.' second for </i><b>'.$book.'</b>
+                <i>'.$result["query_rows"].' result(s) in '.$result["execute_time"].' for </i><b>'.$book.'</b>
                 </div>';
 
-        if (mysqli_num_rows($query) > 0){
+        if ($result["books"] != null){
             echo '<br><br><table class="table table-bordered">
                   <thead>
                         <tr>
@@ -66,7 +64,7 @@
                   </thead>
                   <tbody>';
 
-            while ($row = mysqli_fetch_assoc($query)){
+            foreach ($result["books"] as $row){
                 echo '
                     <tr>
                       <th scope="row">'.$row['name'].'</th>

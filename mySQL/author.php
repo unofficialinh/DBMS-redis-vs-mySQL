@@ -32,6 +32,7 @@
         </div><br>
         <div class="col-sm-7 col-sm-offset-2">
             <select class="form-control" id="sel1" name="author">
+                <option selected disabled hidden>Choose author here</option>
                 <optgroup label="A">
                     <option value="A. Huxley">A. Huxley</option>
                     <option value="Abul Fazal">Abul Fazal</option>

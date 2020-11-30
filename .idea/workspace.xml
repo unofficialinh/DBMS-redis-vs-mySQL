@@ -10,15 +10,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a6b5b3-e306-4674-b04a-dbf22ab879f3" name="Default Changelist" comment="back-end for book and author">
-      <change afterPath="$PROJECT_DIR$/image/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/dbconfig.php" afterDir="false" />
+    <list default="true" id="b6a6b5b3-e306-4674-b04a-dbf22ab879f3" name="Default Changelist" comment="final">
+      <change afterPath="$PROJECT_DIR$/redis/redis_libra/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/redis_libra/author_shell.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/redis_libra/book_shell.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/redis_libra/category_shell.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/redis_libra/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/redis_libra/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/redis_libra/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/redis_libra/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/redis_libra/publisher_shell.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/redis.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/redis.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mySQL/book.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mySQL/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/author.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mySQL/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mySQL/dbconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/dbconfig.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mySQL/publisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/mySQL/publisher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/myStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redis/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/author.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redis/book.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/book.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redis/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/redis/category.php" afterDir="false" />
@@ -64,13 +70,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Stuff\xampp\htdocs\DBMS\redis" />
+      <recent name="D:\UET\2020 2nd\DBMS\Project\Web\redis" />
+      <recent name="D:\UET\2020 2nd\DBMS\Project\Web\mySQL" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Stuff\xampp\htdocs\DBMS\redis" />
       <recent name="D:\UET\2020 2nd\DBMS\Project\Web\redis" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\UET\2020 2nd\DBMS\Project\Web\redis" />
-      <recent name="D:\UET\2020 2nd\DBMS\Project\Web\mySQL" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -94,6 +101,9 @@
       <workItem from="1606277970037" duration="1191000" />
       <workItem from="1606373076103" duration="8000" />
       <workItem from="1606380427178" duration="128000" />
+      <workItem from="1606450150117" duration="656000" />
+      <workItem from="1606622777348" duration="150000" />
+      <workItem from="1606622934924" duration="9373000" />
     </task>
     <task id="LOCAL-00001" summary="mySQL book">
       <created>1605974578743</created>
@@ -116,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606046560967</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final">
+      <created>1606450207208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606450207208</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +156,8 @@
     <MESSAGE value="mySQL book" />
     <MESSAGE value="list for author, category, publisher" />
     <MESSAGE value="back-end for book and author" />
-    <option name="LAST_COMMIT_MESSAGE" value="back-end for book and author" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="0" key="#CLI_Interpreters" timestamp="1606144800654">
@@ -162,9 +180,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606144801602" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1606047737790">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1606625946563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606047737790" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606625946563" />
   </component>
 </project>

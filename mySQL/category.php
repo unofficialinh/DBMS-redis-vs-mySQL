@@ -32,6 +32,7 @@
         </div><br>
         <div class="col-sm-7 col-sm-offset-2">
             <select class="form-control" id="sel1" name="category">
+                <option selected disabled hidden>Choose category here</option>
                 <optgroup label="A">
                     <option value="Academic">Academic</option>
                     <option value="Adult">Adult</option>

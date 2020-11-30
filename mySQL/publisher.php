@@ -32,6 +32,7 @@
         </div><br>
         <div class="col-sm-7 col-sm-offset-2">
             <select class="form-control" name="publisher">
+                <option selected disabled hidden>Choose publisher here</option>
                 <optgroup label="A">
                     <option value="Alchemy Press Book of Horrors">Alchemy Press Book of Horrors</option>
                     <option value="Alfresco Press">Alfresco Press</option>

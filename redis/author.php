@@ -32,6 +32,7 @@
         </div><br>
         <div class="col-sm-7 col-sm-offset-2">
             <select class="form-control" id="sel1" name="author">
+                <option selected disabled hidden>Choose author here</option>
                 <optgroup label="A">
                     <option value="A. Huxley">A. Huxley</option>
                     <option value="Abul Fazal">Abul Fazal</option>
@@ -156,6 +157,7 @@
                     <option value="William Wordsworth">William Wordsworth</option>
                     <option value="Woodrow Wilson">Woodrow Wilson</option>
                 <optgroup label="X">
+                    <option value="XXX">XXX</option>
                 <optgroup label="Y">
                 <optgroup label="Z">
 
@@ -171,23 +173,17 @@
 
 <?php
     if (isset($_POST['search'])){
-        require_once ('dbconfig.php');
         $author = $_POST['author'];
-
-        $time = microtime(true);
-        $query = mysqli_query($conn,
-        "SELECT books.name, p.name as publisher, c.name AS category FROM
-                (SELECT * FROM book WHERE author_id IN (SELECT id FROM author WHERE NAME = '".$author."')) AS books
-                    JOIN publisher p ON books.publisher_id = p.id
-                    JOIN category c ON books.category_id = c.id");
-        $time = microtime(true) - $time;
+        $url = "http://thinhtd.ddns.net:8080/author?name=".$author;
+        $url = str_replace(' ', "%20", $url);
+        $result = json_decode(file_get_contents($url), true);
 
         echo '<br><div class="container">';
         echo '<div style="text-align: center">
-                <i>'.mysqli_num_rows($query).' result(s) in '.$time.' second for </i><b>'.$author.'</b>
+                <i>'.$result["query_rows"].' result(s) in '.$result["execute_time"].' for </i><b>'.$author.'</b>
                 </div>';
 
-        if (mysqli_num_rows($query) > 0){
+        if ($result["books"] != null){
             echo '<br><br><table class="table table-bordered">
                   <thead>
                         <tr>
@@ -198,7 +194,7 @@
                   </thead>
                   <tbody>';
 
-            while ($row = mysqli_fetch_assoc($query)){
+            foreach ($result["books"] as $row) {
                 echo '
                     <tr>
                       <th scope="row">'.$row['name'].'</th>

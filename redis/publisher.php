@@ -32,6 +32,7 @@
         </div><br>
         <div class="col-sm-7 col-sm-offset-2">
             <select class="form-control" name="publisher">
+                <option selected disabled hidden>Choose publisher here</option>
                 <optgroup label="A">
                     <option value="Alchemy Press Book of Horrors">Alchemy Press Book of Horrors</option>
                     <option value="Alfresco Press">Alfresco Press</option>
@@ -170,24 +171,17 @@
 
 <?php
 if (isset($_POST['search'])){
-    require_once ('dbconfig.php');
     $publisher = $_POST['publisher'];
-
-    $time = microtime(true);
-    $query = mysqli_query($conn,
-        "SELECT books.name, c.name as category, a.name AS author FROM
-                (SELECT * FROM book WHERE publisher_id IN 
-                (SELECT id FROM publisher WHERE name = '".$publisher."')) AS books
-                    JOIN category c ON books.category_id = c.id
-                    JOIN author a ON books.author_id = a.id");
-    $time = microtime(true) - $time;
+    $url = "http://thinhtd.ddns.net:8080/publisher?name=".$publisher;
+    $url = str_replace(' ', "%20", $url);
+    $result = json_decode(file_get_contents($url), true);
 
     echo '<br><div class="container">';
     echo '<div style="text-align: center">
-                <i>'.mysqli_num_rows($query).' result(s) in '.$time.' second for </i><b>'.$publisher.'</b>
+                <i>'.$result["query_rows"].' result(s) in '.$result["execute_time"].' for </i><b>'.$publisher.'</b>
                 </div>';
 
-    if (mysqli_num_rows($query) > 0){
+    if ($result["books"] != null){
         echo '<br><br><table class="table table-bordered">
                   <thead>
                         <tr>
@@ -198,7 +192,7 @@ if (isset($_POST['search'])){
                   </thead>
                   <tbody>';
 
-        while ($row = mysqli_fetch_assoc($query)){
+        foreach ($result["books"] as $row){
             echo '
                     <tr>
                       <th scope="row">'.$row['name'].'</th>

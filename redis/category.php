@@ -32,6 +32,7 @@
         </div><br>
         <div class="col-sm-7 col-sm-offset-2">
             <select class="form-control" id="sel1" name="category">
+                <option selected disabled hidden>Choose category here</option>
                 <optgroup label="A">
                     <option value="Academic">Academic</option>
                     <option value="Adult">Adult</option>
@@ -165,24 +166,20 @@
 
 <?php
 if (isset($_POST['search'])){
-    require_once ('dbconfig.php');
     $category = $_POST['category'];
 
-    $time = microtime(true);
-    $query = mysqli_query($conn,
-        "SELECT books.name, p.name as publisher, a.name AS author FROM
-                (SELECT * FROM book WHERE category_id IN 
-                (SELECT id FROM category WHERE name = '".$category."')) AS books
-                    JOIN publisher p ON books.publisher_id = p.id
-                    JOIN author a ON books.author_id = a.id");
-    $time = microtime(true) - $time;
+    $url = "http://thinhtd.ddns.net:8080/category?name=".$category;
+    $url = str_replace(' ', "%20", $url);
+    $result = json_decode(file_get_contents($url), true);
 
     echo '<br><div class="container">';
     echo '<div style="text-align: center">
-                <i>'.mysqli_num_rows($query).' result(s) in '.$time.' second for </i><b>'.$category.'</b>
+                <i>'.$result["query_rows"].' result(s) in '.$result["execute_time"].' for </i><b>'.$category.'</b>
                 </div>';
 
-    if (mysqli_num_rows($query) > 0){
+
+
+    if ($result["books"] != null){
         echo '<br><br><table class="table table-bordered">
                   <thead>
                         <tr>
@@ -193,7 +190,7 @@ if (isset($_POST['search'])){
                   </thead>
                   <tbody>';
 
-        while ($row = mysqli_fetch_assoc($query)){
+        foreach ($result["books"] as $row){
             echo '
                     <tr>
                       <th scope="row">'.$row['name'].'</th>
