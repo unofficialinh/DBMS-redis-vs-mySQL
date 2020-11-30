@@ -1,0 +1,1 @@
+redis-cli < publisher_output.txt

@@ -1,0 +1,1 @@
+redis-cli < author_output.txt
